@@ -1,11 +1,19 @@
-import { useState } from "react"
+import { useState,useEffect } from "react"
 import logo from "../assets/paralearn_logo-removebg-preview.png"
 import { CiMenuBurger } from "react-icons/ci";
 import { MdCancel } from "react-icons/md";
-
 function HeaderLand(){
     const [search, setsearch] = useState("")
-    const [isNav, setisNav] = useState(true)
+    const [isNav, setisNav] = useState(false)
+
+    useEffect(() => {
+        if(window.innerWidth > 440){
+            setisNav(true)
+            console.log(window.innerWidth)
+        }
+    })
+
+   
 
     function submit(e : any){
         setsearch(e.target.value)
@@ -16,7 +24,7 @@ function HeaderLand(){
         <img src={logo} alt="logo" className="w-[103px] h-[90px] sm:m-0 mr-[190px]"/>
         {isNav? <MdCancel className="sm:hidden" onClick={() => {setisNav(false)}}/> : <CiMenuBurger className="sm:hidden" onClick={() => {setisNav(true); console.log(isNav)}}/>}
         </div>
-        <ul className=" sm:flex-row items-center justify-evenly sm:w-[80%] w-[100%] flex sm:flex flex-col absolute sm:static top-[90px] h-[400px] sm:h-auto bg-[#ffffff41] backdrop-blur-sm sm:bg-transparent z-[2] "style={isNav?{display:"flex"}:{display:"none"}}>
+        <ul className=" sm:flex-row items-center justify-evenly sm:w-[80%] w-[100%] flex sm:flex flex-col absolute sm:static top-[90px] h-[400px] sm:h-auto bg-[#ffffff6c] backdrop-blur-sm sm:bg-transparent z-[2] "style={isNav?{display:"flex"}:{display:"none"}}>
             <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] border-[#F53838]"><a href="">HOME</a></li>
             <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] border-[#F53838]"><a href="">INSTITUTIONS</a></li>
             <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] border-[#F53838]"><a href="">BLOG</a></li>
