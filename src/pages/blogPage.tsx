@@ -1,5 +1,4 @@
 import HeaderLand from "@/components/headerLand"
-import img from "../assets/Rectangle 334.png"
 import Footer from "@/components/footer"
 import block from "../assets/blockchain.jpg"
 import g from "../assets/5G.jpeg"
