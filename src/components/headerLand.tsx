@@ -1,29 +1,39 @@
 import { useState } from "react"
 import logo from "../assets/paralearn_logo-removebg-preview.png"
+import { CiMenuBurger } from "react-icons/ci";
+import { MdCancel } from "react-icons/md";
 
 function HeaderLand(){
     const [search, setsearch] = useState("")
+    const [isNav, setisNav] = useState(true)
 
     function submit(e : any){
-        // setsearch(e.target.value)
+        setsearch(e.target.value)
     }
 
-    return <div className="flex flex-row items-center justify-evenly">
-        <div className="w-[103px] h-[103px] overflow-hidden">
-        <img src={logo} alt="logo" className="w-[103px] h-[90px]"/>
+    return <div className="flex flex-col sm:flex-row items-center sm:justify-evenly bg-white sm:bg-transparent justify-between w-[100%]">
+        <div className="overflow-hidden flex justify-evenly items-center w-[100%] sm:w-auto">
+        <img src={logo} alt="logo" className="w-[103px] h-[90px] sm:m-0 mr-[190px]"/>
+        {isNav? <MdCancel className="sm:hidden" onClick={() => {setisNav(false)}}/> : <CiMenuBurger className="sm:hidden" onClick={() => {setisNav(true); console.log(isNav)}}/>}
         </div>
-        <ul className="flex flex-row items-center justify-evenly w-[697px]">
-            <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] x"><a href="">HOME</a></li>
-            <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] x"><a href="">INSTITUTIONS</a></li>
-            <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] x"><a href="">BLOG</a></li>
-            <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] x"><a href="">ABOUT US</a></li>
-            <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] x"><a href="">CONTACT US</a></li>
-        </ul>
-        
-        <form action="" method="post" onSubmit={(e) => submit(e)} className="invisible">
-            <input type="text" name="Search" id="Search" value={search} onChange={(e) => {setsearch(e.target.value)}} className="w-[202px] h-[46px] rounded-[6px] border-[2px] border-[#FAFDFF]"/>
+        <ul className=" sm:flex-row items-center justify-evenly sm:w-[80%] w-[100%] flex sm:flex flex-col absolute sm:static top-[90px] h-[400px] sm:h-auto bg-[#ffffff8c] backdrop-blur-sm sm:bg-transparent z-[2] "style={isNav?{display:"flex"}:{display:"none"}}>
+            <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] border-[#F53838]"><a href="">HOME</a></li>
+            <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] border-[#F53838]"><a href="">INSTITUTIONS</a></li>
+            <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] border-[#F53838]"><a href="">BLOG</a></li>
+            <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] border-[#F53838]"><a href="">ABOUT US</a></li>
+            <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] border-[#F53838]"><a href="">CONTACT US</a></li>
+            <li className="flex flex-col sm:flex-row items-center justify-evenly w-[40%] h-[190px] sm:h-auto">
+            <form action="" method="post" onSubmit={(e) => submit(e)} className="">
+            <input type="text" name="Search" id="Search" value={search} onChange={(e) => {setsearch(e.target.value)}} className="w-[202px] h-[46px] rounded-[6px] border-[2px] border-[#FAFDFF] p-[10px]" placeholder="Email"/>
         </form>
         <button className="w-[128px] h-[52px] bg-[#F53838] rounded-[6px] text-[16px] font-semibold text-white"><a href="/login">Login</a></button>
+            </li>
+        </ul>
+        
+        {/* <form action="" method="post" onSubmit={(e) => submit(e)} className="invisible">
+            <input type="text" name="Search" id="Search" value={search} onChange={(e) => {setsearch(e.target.value)}} className="w-[202px] h-[46px] rounded-[6px] border-[2px] border-[#FAFDFF]"/>
+        </form>
+        <button className="w-[128px] h-[52px] bg-[#F53838] rounded-[6px] text-[16px] font-semibold text-white hidden sm:block"><a href="/login">Login</a></button> */}
     </div>
 }
 

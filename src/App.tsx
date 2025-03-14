@@ -1,6 +1,6 @@
 import LandingPage from "./pages/landingPage"
 function App(){
-  return <div>
+  return <div className="w-[100dvw]">
     <LandingPage/>
   </div>
 }

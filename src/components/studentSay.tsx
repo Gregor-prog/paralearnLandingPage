@@ -12,8 +12,8 @@ function Review(){
         <div className="blur-sm h-[72px] w-[72px] bg-[#F53838] text-[#F53838] rounded-full absolute left-[-40px] top-[300px] z-[-1]">o</div>
 
 
-        <div className="h-[436px] flex flex-row items-center justify-evenly ">
-             <div className="h-[345px] w-[31%] bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center justify-evenly p-[20px]">
+        <div className="sm:h-[436px] flex sm:flex-row items-center my-[20px] sm:m-0 justify-evenly flex-col h-auto">
+             <div className="sm:h-[345px] h-[430px] sm:w-[31%] w-[80%] bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center justify-evenly p-[20px]">
                         <img src={stars} alt="review" />
                         <p className="text-[16px]  text-[#272643] my-[10px] w-[80%]">
                         Nunc ut semper felis egestas donec purus, sollicitudin. Cras arcu viverra ullamcorper quam amet. Nulla blandit maecenas mattis sed. Tortor aenean volutpat nullam consectetur in. Tellus nisl nunc risus purus venenatis, scelerisque faucibus 
@@ -27,7 +27,7 @@ function Review(){
                         </div>
             </div>
 
-            <div className="h-[345px] w-[31%] bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center justify-evenly p-[20px]">
+            <div className="sm:h-[345px] h-[430px] sm:w-[31%] w-[80%] my-[20px] sm:m-0 bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center justify-evenly p-[20px]">
                         <img src={stars} alt="review" />
                         <p className="text-[16px]  text-[#272643] my-[10px] w-[80%]">
                         Nunc ut semper felis egestas donec purus, sollicitudin. Cras arcu viverra ullamcorper quam amet. Nulla blandit maecenas mattis sed. Tortor aenean volutpat nullam consectetur in. Tellus nisl nunc risus purus venenatis, scelerisque faucibus 
@@ -41,7 +41,7 @@ function Review(){
                         </div>
             </div>
 
-            <div className="h-[345px] w-[31%] bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center justify-evenly p-[20px]">
+            <div className="sm:h-[345px] h-[430px] sm:w-[31%] w-[80%] my-[20px] sm:m-0 bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center justify-evenly p-[20px]">
                         <img src={stars} alt="review" />
                         <p className="text-[16px]  text-[#272643] my-[10px] w-[80%]">
                         Nunc ut semper felis egestas donec purus, sollicitudin. Cras arcu viverra ullamcorper quam amet. Nulla blandit maecenas mattis sed. Tortor aenean volutpat nullam consectetur in. Tellus nisl nunc risus purus venenatis, scelerisque faucibus 

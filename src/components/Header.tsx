@@ -5,10 +5,10 @@ function Header(){
     const [search, setsearch] = useState("")
 
     function submit(e : any){
-        // setsearch(e.target.value)
+        setsearch(e.target.value)
     }
 
-    return <div className="flex flex-row items-center justify-evenly">
+    return <div className="flex flex-row items-center sm:justify-evenly justify-between">
         <div className="w-[103px] h-[103px] overflow-hidden">
         <img src={logo} alt="logo" className="w-[103px] h-[103px]"/>
         </div>

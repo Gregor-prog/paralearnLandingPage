@@ -6,8 +6,8 @@ function Blog(){
         <div className="blur-sm h-[72px] w-[72px] bg-[#F53838] text-[#F53838] rounded-full absolute left-[-40px] top-[300px] z-[-1]">o</div>
 
 
-        <div className="h-[496px] flex flex-row items-center justify-evenly ">
-             <div className="h-[496px] w-[31%] bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center  p-[20px]">
+        <div className="sm:h-[496px] flex sm:flex-row items-center justify-evenly flex-col h-auto">
+             <div className="sm:h-[496px] sm:w-[31%] w-[88%] my-[20px] sm:m-0 bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center  p-[20px]">
                         <img src={img} alt="" />
                         <h1 className="text-[20px] font-bold text-[#272643] text-left my-[20px]">Nulla eu aliquam fringilla tincidunt</h1>
                         <p className="text-[#4C4A82] text-[14px] font-semibold text-left">
@@ -15,7 +15,7 @@ function Blog(){
                         </p>
             </div>
 
-            <div className="h-[496px] w-[31%] bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center  p-[20px]">
+            <div className="sm:h-[496px] sm:w-[31%] w-[88%] my-[20px] bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center  p-[20px]">
                         <img src={img} alt="" />
                         <h1 className="text-[20px] font-bold text-[#272643] text-left my-[20px]">Nulla eu aliquam fringilla tincidunt</h1>
                         <p className="text-[#4C4A82] text-[14px] font-semibold text-left">
@@ -23,7 +23,7 @@ function Blog(){
                         </p>
             </div>
 
-            <div className="h-[496px] w-[31%] bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center  p-[20px]">
+            <div className="sm:h-[496px] sm:w-[31%] w-[88%] my-[20px] bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center  p-[20px]">
                         <img src={img} alt="" />
                         <h1 className="text-[20px] font-bold text-[#272643] text-left my-[20px]">Nulla eu aliquam fringilla tincidunt</h1>
                         <p className="text-[#4C4A82] text-[14px] font-semibold text-left">
