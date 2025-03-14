@@ -5,26 +5,17 @@ function Welcome(){
     const [eEmail, seteEmail] = useState("")
     return <div className="flex flex-row items-center justify-evenly w-[90%] h-[650px] relative">
 
-<motion.div
-        initial={{ opacity: 0, y: 150 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5 }}
-        viewport={{ once: true }} // Only animate once
-        className="h-screen "
-      >
 
-        <div className="blur-sm h-[72px] w-[72px] bg-[#F53838] text-[#F53838] rounded-full absolute top-[250px] right-[-40px]">o</div>
-        <div className="blur-sm h-[72px] w-[72px] bg-[#F53838] text-[#F53838] rounded-full absolute left-[-40px] top-[120px]">o</div>
+
+        <div className="blur-sm h-[72px] w-[72px] bg-[#F53838] text-[#F53838] rounded-full absolute top-[250px] right-[-40px] animate-bounce">o</div>
+        <div className="blur-sm h-[72px] w-[72px] bg-[#F53838] text-[#F53838] rounded-full absolute left-[-40px] top-[120px] animate-bounce">o</div>
         <div className="blur-sm h-[72px] w-[72px] bg-[#F53838] text-[#F53838] rounded-full absolute  sm:top-[500px] top-[700px]">o</div>
 
-
-
-        </motion.div>
             <div className="h-[60%] flex flex-col justify-evenly">
 
             <motion.div
         initial={{ opacity: 0, y: 150 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 15 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: true }} // Only animate once
         className="h-screen "
@@ -49,7 +40,7 @@ function Welcome(){
 
             <motion.div
         initial={{ opacity: 0, y: 150 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 15 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }} // Only animate once
         className="h-screen flex items-center justify-center "

@@ -7,13 +7,13 @@ function Footer(){
     const [eEmail, seteEmail] = useState("")
     return <div className="sm:h-[340px] w-[100%] bg-[#4C4A82] h-auto">
          <div className="flex sm:flex-row items-center justify-evenly p-[20px] flex-col">
-            <div className="flex items-center justify-evenly sm:w-[50%] w-auto ">
+            <div className="flex items-center justify-evenly sm:w-[50%] w-[100%] my-[10px]">
                 <div className="flex flex-col items-center justify-evenly ">
-                    <img src={logo} alt="paralearn_logo" className="w-[185px] h-[185px] rounded-full"/>
+                    <img src={logo} alt="paralearn_logo" className="w-[98px] h-[98px] sm:w-[185px] sm:h-[185px] rounded-full"/>
                     <div className="flex"> 
-                    <img src={facebook} alt="facebook" />
-                    <img src={twitter} alt="twitter" />
-                    <img src={instagram} alt="instagram" />
+                    <img src={facebook} alt="facebook"className="sm:h-auto sm:w-auto h-[27px] w-[27px]" />
+                    <img src={twitter} alt="twitter" className="sm:h-auto sm:w-auto h-[27px] w-[27px]"/>
+                    <img src={instagram} alt="instagram" className="sm:h-auto sm:w-auto h-[27px] w-[27px]"/>
                     </div>
                 </div>
                 <ul>
