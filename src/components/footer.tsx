@@ -5,7 +5,7 @@ import instagram from "../assets/Instagram.png"
 import { useState } from "react"
 function Footer(){
     const [eEmail, seteEmail] = useState("")
-    return <div className="sm:h-[340px] w-[100%] bg-[#4C4A82] h-auto">
+    return <div className="sm:h-[360px] w-[100%] bg-[#4C4A82] h-auto">
          <div className="flex sm:flex-row items-center justify-evenly p-[20px] flex-col">
             <div className="flex items-center justify-evenly sm:w-[50%] w-[100%] my-[10px]">
                 <div className="flex flex-col items-center justify-evenly ">
