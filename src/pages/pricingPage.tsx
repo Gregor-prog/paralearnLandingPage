@@ -17,7 +17,7 @@ function Pricing(){
         transition={{ duration: 1.5 }}
         viewport={{ once: true }} // Only animate once
         className="sm:w-[30%] w-[90%]"
-      >        <div className="h-[436px] sm:w-[100%] w-[100%] bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center justify-evenly">
+      >        <div className="h-[436px] sm:w-[100%] w-[100%] bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center justify-evenly rounded-[12px]">
                 <p className="font-bold text-[26px] text-[#272643]">Free</p>
                 <ul className="flex flex-col items-center justify-evenly h-[40%]">
                     <li className="flex items-center text-[18px] text-[#393939]"><IoMdCheckmarkCircleOutline className="text-[#F53838] mx-[10px]"/>Lorem ipsum dolor sit amet</li>
@@ -44,7 +44,7 @@ function Pricing(){
       >   
 
 
-            <div className="h-[500px]  sm:w-[100%] w-[100%] bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center justify-evenly mt-[30px]">
+            <div className="h-[500px]  sm:w-[100%] w-[100%] bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center justify-evenly mt-[30px] rounded-[12px]">
                 <div className="bg-[#F53838] font-bold text-[16px] text-[white] h-[54px] w-[100%] flex flex-row items-center justify-center">
                     Most Popular
                 </div>
@@ -71,7 +71,7 @@ function Pricing(){
         className="sm:w-[30%] w-[90%]"
       >   
 
-            <div className="h-[436px] sm:w-[100%] w-[100%] bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center justify-evenly sm:m-0 my-[30px]">
+            <div className="h-[436px] sm:w-[100%] w-[100%] bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center justify-evenly sm:m-0 my-[30px] ru">
                 <p className="font-bold text-[26px] text-[#272643]">Pro Plan</p>
                 <ul className="flex flex-col items-center justify-evenly h-[40%]">
                     <li className="flex items-center text-[18px] text-[#393939]"><IoMdCheckmarkCircleOutline className="text-[#F53838] mx-[10px]"/>Lorem ipsum dolor sit amet</li>
