@@ -7,7 +7,7 @@ function Pricing(){
     <HeaderLand/>
     <p className="font-bold text-[45px] text-[#272643] text-center m-[50px]">Plans & Pricing</p>
 
-<div className="sm:h-[436px] h-auto flex sm:flex-row items-center justify-evenly flex-col">
+<div className="sm:h-[436px] h-auto flex sm:flex-row items-center justify-evenly flex-col mb-[90px]">
     
     <motion.div
         initial={{ opacity: 0, y: 50 }}
