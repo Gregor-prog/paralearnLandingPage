@@ -3,7 +3,7 @@ import { useState } from "react"
 import {motion} from "framer-motion"
 function Welcome(){
     const [eEmail, seteEmail] = useState("")
-    return <div className="flex flex-row items-center justify-evenly w-[90%] h-[650px] relative">
+    return <div className="flex sm:flex-row flex-col-reverse items-center justify-evenly w-[90%] sm:h-[650px] h-auto relative">
 
 
 
@@ -18,7 +18,7 @@ function Welcome(){
         whileInView={{ opacity: 1, y: 15 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: true }} // Only animate once
-        className="h-screen "
+        className="h-auto"
       >
                     <div>
                <h1 className="text-[48px] font-bold text-[#272643]  my-[15px]">Welcome to ParaLearn</h1>
@@ -43,9 +43,9 @@ function Welcome(){
         whileInView={{ opacity: 1, y: 15 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }} // Only animate once
-        className="h-screen flex items-center justify-center "
+        className=" h-auto"
       >
-                    <div className="h-[100%] sm:block hidden">
+                    <div className="sm:h-[100%] h-auto ">
                         <img src={welcome} alt="thining" />
                     </div>
       </motion.div>
