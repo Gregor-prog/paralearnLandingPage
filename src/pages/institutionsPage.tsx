@@ -7,3 +7,4 @@ function Institutions(){
         course materials for any programme registered in that institution</p>
     </div>
 }
+export default Institutions
