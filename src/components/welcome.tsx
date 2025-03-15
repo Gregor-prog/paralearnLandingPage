@@ -29,7 +29,7 @@ function Welcome(){
                </div>
                 <div className="sm:w-[80%] w-[100%]">
                 <input type="text"  value={eEmail} onChange={(e) => seteEmail(e.target.value)} className="h-[60px] bg-[#E0E0E0] w-[60%] p-[15px]" placeholder="Enter Your Email"/>
-                <button className="bg-[#F53838] text-[white] font-semibold text-[20px] h-[60px] w-[40%] sm:rounded-[0] rounded-l-[6px]">Start Learning</button>
+                <a href="https://havilah.paralearn.com.ng"><button className="bg-[#F53838] text-[white] font-semibold text-[20px] h-[60px] w-[40%] sm:rounded-[0] rounded-l-[6px]">Start Learning</button></a>
                 </div>
 
 

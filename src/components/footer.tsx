@@ -20,6 +20,7 @@ function Footer(){
             })
             if(!send.ok){throw new Error("could'nt send email");}
             toast.success("You have registered for paralearn newsletter")
+            setEmail("")
         } catch (error) {
             if(error){
                 console.log(error)
