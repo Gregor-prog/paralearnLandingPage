@@ -6,6 +6,7 @@ import phone from "../assets/bi_telephone-outbound-fill.png"
 import HeaderLand from "@/components/headerLand"
 import Footer from "@/components/footer"
 import { Toaster, toast } from 'sonner';
+import EmailJS from "@emailjs/browser"
 function Contact(){
         const [Username, setUsername] = useState("")
         const [text,settext] = useState("")
@@ -20,12 +21,13 @@ function Contact(){
                 if(text == "" || text == null){
                     throw new Error("feedback field is empty");
                 }
-                const send = await fetch("https://script.google.com/macros/s/AKfycbwgYOFV0e8FzqbaYjBMUs8NugLhAERzZzaW3clsSB4wzsUe6i9nwFKJB_gUvAtCjuvelw/exec", {
-                    method: 'POST',
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    body:(`username=${Username}&feedback=${text}`)
-                })
-                if(!send.ok){throw new Error("could'nt send feedback");}
+                // const send = await fetch("https://script.google.com/macros/s/AKfycbwgYOFV0e8FzqbaYjBMUs8NugLhAERzZzaW3clsSB4wzsUe6i9nwFKJB_gUvAtCjuvelw/exec", {
+                //     method: 'POST',
+                //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                //     body:(`username=${Username}&feedback=${text}`)
+                // })
+                EmailJS.sendForm("serviceid","template", "")
+                // if(!send.ok){throw new Error("could'nt send feedback");}
                 toast.success("Thanks for the feedback")
                 setUsername("")
                 settext("")

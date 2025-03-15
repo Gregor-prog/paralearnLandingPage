@@ -17,7 +17,7 @@ function BlogPage(){
 
     return <div className="my-[40px] w-[100%] relative flex flex-col items-center">
         <DialogDemo/>
-        <HeaderLand/>
+        <HeaderLand />
         <p className="font-bold text-[45px] text-[#272643] text-center m-[10px]">Latest Blog Posts</p>
 
         <div className="blur-sm h-[72px] w-[72px] bg-[#F53838] text-[#F53838] rounded-full absolute left-[-40px] top-[300px] z-[-1]">o</div>
