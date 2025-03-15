@@ -29,14 +29,14 @@ function HeaderLand(){
             <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] border-[#F53838]"><Link to="/">HOME</Link></li>
             <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] border-[#F53838]"><Link to="/institutions">INSTITUTIONS</Link></li>
             <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] border-[#F53838]"><Link to="/Blog">BLOG</Link></li>
-            <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] border-[#F53838]"><Link to="/About_Us">ABOUT US</Link></li>
+            <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] border-[#F53838]"><Link to="/About">ABOUT US</Link></li>
             <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] border-[#F53838]"><Link to="/Pricing">PRICING</Link></li>
             <li className="text-[16px] font-semibold hover:text-[#F53838] hover:border-b-[3px] border-[#F53838]"><Link to="/Contact_us">CONTACT US</Link></li>
             <li className="flex flex-col sm:flex-row items-center justify-evenly w-[40%] h-[190px] sm:h-auto">
             <form action="" method="post" onSubmit={(e) => submit(e)} className="">
             <input type="text" name="Search" id="Search" value={search} onChange={(e) => {setsearch(e.target.value)}} className="w-[202px] h-[46px] rounded-[6px] border-[2px] border-[#FAFDFF] p-[10px]" placeholder="Email"/>
         </form>
-        <button className="w-[128px] h-[52px] bg-[#F53838] rounded-[6px] text-[16px] font-semibold text-white"><a href="/login">Login</a></button>
+        <a href="/login"><button className="w-[128px] h-[52px] bg-[#F53838] rounded-[6px] text-[16px] font-semibold text-white">Login</button></a>
             </li>
         </ul>
         <Outlet/>
