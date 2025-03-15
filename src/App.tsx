@@ -5,6 +5,7 @@ import Pricing from "./pages/pricingPage"
 import About from "./pages/AboutusPage"
 import Login from "./pages/login"
 import {BrowserRouter, Routes, Route} from "react-router-dom"
+import Contact from "./pages/contactUS"
 function App(){
   return <div className="w-[100dvw] overflow-x-hidden">
     <BrowserRouter>
@@ -14,7 +15,7 @@ function App(){
        <Route path="/Blog"  element={<BlogPage/>}/>
        <Route path="/Pricing"  element={<Pricing/>}/>
        <Route path="/About" element={<About/>}  />
-       <Route path="/Login" element={<Login/>}  />
+       <Route path="/contact" element={<Contact/>}  />
     </Routes>
     </BrowserRouter>
   </div>
