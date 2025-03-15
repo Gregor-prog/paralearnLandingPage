@@ -3,7 +3,6 @@ import LandingPage from "./pages/landingPage"
 import BlogPage from "./pages/blogPage"
 import Pricing from "./pages/pricingPage"
 import About from "./pages/AboutusPage"
-import Login from "./pages/login"
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Contact from "./pages/contactUS"
 function App(){
