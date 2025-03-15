@@ -8,9 +8,9 @@ import renewable from "../assets/renewable.jpeg"
 import smart from "../assets/smarthome.jpeg"
 import { DialogDemo } from "@/components/Dialog"
 
-function sendEle(e:any){
+// function sendEle(e:any){
 
-}
+// }
 
 
 function BlogPage(){
