@@ -3,7 +3,7 @@
         {"src": "/", "dest": "/"},
         {"src": "/institutions", "dest": "/"},
         {"src": "/Blog", "dest": "/"},
-        {"src": "/Price", "dest": "/"}
+        {"src": "/Price", "dest": "/"},
         {"src": "/contact", "dest": "/"}
     ]
 }
