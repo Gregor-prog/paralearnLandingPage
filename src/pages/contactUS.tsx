@@ -26,7 +26,7 @@ function Contact(){
                     body:(`username=${Username}&feedback=${text}`)
                 })
                 if(!send.ok){throw new Error("could'nt send feedback");}
-                toast.success("You have registered for paralearn newsletter")
+                toast.success("Thanks for the feedback")
                 setUsername("")
                 settext("")
             } catch (error) {
