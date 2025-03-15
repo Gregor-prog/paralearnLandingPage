@@ -5,10 +5,10 @@ import download from "../assets/Group 1351.png"
 import connect from "../assets/Group 1352.png"
 import {motion} from "framer-motion"
 function How(){
-    return <div className="w-[90%] sm:h-[617px] h-auto">
-        <h1 className="font-bold text-[#272643] text-[32px] text-center mb-[40px]">How It Works?</h1>
-        <div className="h-[95%] flex sm:flex-row flex-col">
-            <div className="h-[100%] flex flex-col items-center justify-evenly sm:w-[20%] w-[100%] ">
+    return <div className="w-[85%] sm:h-[617px] h-auto flex flex-col items-center mx-auto">
+        <h1 className="font-bold text-[#272643] text-[32px]  mb-[40px]">How It Works?</h1>
+        <div className="h-[95%] flex sm:flex-row flex-col  items-center justify-between">
+            <div className="h-[100%] flex flex-col items-center justify-evenly sm:w-[20%] w-[100%]">
                 <div className="flex flex-col sm:items-end sm:justify-center items-center justify-center sm:w-auto w-[67%] sm:shadow-none shadow-2xl sm:p-0 p-[45px]">
                     <img src={create} alt="create_img" />
                     <p className="text-[16px] text-[#272643] my-[5px] font-bold">Create Account</p>
@@ -21,7 +21,7 @@ function How(){
                 </div>
             </div>
             <div className="h-[100%] flex flex-col items-center justify-end bg-red  mx-[30px] sm:w-[50%] w-[100%] my-[30px]">
-                <div className="sm:h-[466px] sm:w-[466px] w-[400px] h-[400px] bg-[#4C4A82] shadow-xl rounded-full shadow-black absolute z-[-1]"></div>
+                <div className="sm:h-[466px] sm:w-[466px] w-[350px] h-[350px] bg-[#4C4A82] shadow-xl rounded-full shadow-black absolute z-[-1]"></div>
                 
                 <motion.div
         initial={{ opacity: 0, y: 50 }}

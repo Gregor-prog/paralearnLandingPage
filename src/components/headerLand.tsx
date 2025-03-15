@@ -20,7 +20,7 @@ function HeaderLand(){
         setsearch(e.target.value)
     }
 
-    return <div className="flex flex-col sm:flex-row items-center sm:justify-evenly bg-white sm:bg-transparent justify-between w-[100%]">
+    return <div className="flex flex-col sm:flex-row items-center sm:justify-evenly bg-white sm:bg-transparent justify-between w-[100%] ">
         <div className="overflow-hidden flex justify-evenly items-center w-[100%] sm:w-auto">
         <img src={logo} alt="logo" className="w-[103px] h-[90px] sm:m-0 mr-[190px]"/>
         {isNav? <MdCancel className="sm:hidden" onClick={() => {setisNav(false)}}/> : <CiMenuBurger className="sm:hidden" onClick={() => {setisNav(true); console.log(isNav)}}/>}

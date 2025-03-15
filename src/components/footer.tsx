@@ -30,7 +30,7 @@ function Footer(){
 
     }
 
-    return <div className="sm:h-[360px] w-[100%] bg-[#4C4A82] h-auto">
+    return <div className="sm:h-[360px] w-[100%] bg-[#4C4A82] h-auto ">
         <Toaster richColors position="top-right" />
          <div className="flex sm:flex-row items-center justify-evenly p-[20px] flex-col">
             <div className="flex items-center justify-evenly sm:w-[50%] w-[100%] my-[10px]">
