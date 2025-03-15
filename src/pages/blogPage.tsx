@@ -24,7 +24,7 @@ function BlogPage(){
 
 
         <div className="grid sm:grid-cols-3 w-[100%] grid-cols-1 align-self-center justify-self-center items-center">
-             <div onClick={(e) => sendEle(e)}  className="sm:h-[496px] sm:w-[90%] self-center justify-center w-[88%] my-[20px] sm:m-0 bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center  p-[20px]">
+             <div   className="sm:h-[496px] sm:w-[90%] self-center justify-center w-[88%] my-[20px] sm:m-0 bg-[#FAFDFF] shadow-xl shadow-[#f538383f] flex flex-col items-center  p-[20px]">
                         <img src={AI} alt="" />
                         <h1 className="text-[20px] font-bold text-[#272643] text-left my-[20px]">The future of AI in healthcare</h1>
                         <p className="text-[#4C4A82] text-[14px] font-semibold text-left">
