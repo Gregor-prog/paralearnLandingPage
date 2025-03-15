@@ -33,6 +33,7 @@ function Contact(){
                 
                 setUsername("")
                 settext("")
+                setEmail("")
             } catch (error) {
                 if(error){
                     toast.error("couldn't send feedback")
