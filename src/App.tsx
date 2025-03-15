@@ -6,7 +6,7 @@ import About from "./pages/AboutusPage"
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Contact from "./pages/contactUS"
 function App(){
-  return <div className="w-[100%] overflow-x-hidden">
+  return <div className="w-[100%] overflow-hidden">
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<LandingPage/>}/>
